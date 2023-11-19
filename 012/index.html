@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Faixa Etária</h1>
+
+    <form onsubmit="calcularFaixaEtaria(); return false;">
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+    <img id="imagem" alt="Imagem ilustrativa">
+
+    <h2>Tabela de Referência</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Intervalo de idade</th>
+          <th>Faixa Etária</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>0 a 2</td>
+        <td>Bebé</td>
+        </tr>
+        <tr>
+          <td>2 a 12</td>
+          <td>Criança</td>
+        </tr>
+        <tr>
+            <td>12 a 16</td>
+            <td>Adolescente</td>
+        </tr>
+        <tr>
+            <td>16 a 18</td>
+            <td>Jovem adulto</td>
+        </tr>
+        <tr>
+            <td>18 a 50</td>
+            <td>Adulto</td>
+        </tr>
+        <tr>
+            <td>50 a 65</td>
+            <td>Meia idade</td>
+        </tr>
+        <tr>
+            <td>65 a 99</td>
+            <td>Idoso</td>
+        </tr>
+        <tr>
+            <td>100 a 129</td>
+            <td>Lendário</td>
+        </tr>
+        <tr>
+            <td>130 a ∞</td>
+            <td>Imortal</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
